@@ -1,27 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './TopBar.css';
 
 
 
 export default function TopBar(){
 
     return(
-        <div className='home-container'>
+        <div className='topBar-container'>
+            <h3> PACH<span>IOLI</span></h3>
             <ul>
                 <li>
-                <Link to='/' >Home</Link>
+                <Link className='link' to='/' > Home </Link>
                 </li>
                 <li>
-                <Link to='/skills' >Skills</Link>
+                <Link className='link' to='/skills' > Skills </Link>
                 </li>
                 <li>
-                <Link to='/about' >About</Link>
+                <Link className='link' to='/about' > About </Link>
                 </li>
                 <li>
-                <Link to='/portfolio' >Portfolio</Link>
+                <Link className='link' to='/portfolio' > Portfolio </Link>
                 </li>
                 <li>
-                <Link to='/contact' >Contact</Link>
+                <Link className='link' to='/contact' > Contact </Link>
                 </li>
             </ul>
         </div>

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../../assets/drone-noche-mar-del-plata.jpg) no-repeat center center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+}
+
+.main-container img{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    border: 5px solid #e6e6ff;
+}
+
+.main-container h3{
+    color: #b3b3ff;
+}
+
+.main-container h1{
+    color: white;
+    
+}
+
+.main-button{
+    width: 200px;
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button button{
+    text-decoration: none;
+    border-style: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ff3333;
+}
+
+.main-button button:hover{
+    width: 103px;
+    height: 33px;
+    font-size: large;
+}
+
+.contact-btn{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    
+}

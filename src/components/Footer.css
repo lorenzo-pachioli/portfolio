@@ -1,0 +1,32 @@
+.footer-container{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #031430;
+    box-sizing: content-box;
+}
+.footer-container p{
+    
+    width: 20%;
+    height: 100%;
+    color:white;
+    padding-left: 80px;
+    text-align: left;
+}
+
+.contacto ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 80px;
+}
+
+.contacto li{
+    text-decoration: none;
+    color:white;
+    padding-left: 10px;
+}

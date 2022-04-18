@@ -1,0 +1,49 @@
+.topBar-container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    box-sizing: content-box;
+}
+
+.topBar-container h3{
+    color: #031430;
+    justify-content: center;
+    font-weight: 800;
+    padding-left: 80px;
+}
+
+h3 span{
+    color:#ff6666;
+}
+
+.topBar-container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.topBar-container li{
+    text-decoration: none;
+    padding-left: 40px;
+    
+}
+
+.topBar-container .link{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.link:hover{
+    text-decoration: line-through #ff6666 solid 2px;
+
+}
