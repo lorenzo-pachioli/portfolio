@@ -2,14 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+/* import createCtx from './context/AppContext'; */
+/* import { BrowserRouter as Router, Route } from 'react-router-dom'; */
 import reportWebVitals from './reportWebVitals';
+import AppProvider from './context/AppContext3';
+
+/* const [AppContext, AppProvider] = createCtx('') */
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+        <AppProvider>
+          <App />
+        </AppProvider>
   </React.StrictMode>
 );
 
