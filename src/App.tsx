@@ -6,6 +6,8 @@ import Skills from './pages/Skills/Skils';
 import About from './pages/About/About';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Contact from './pages/Contact/Contact';
+import TopBar from './components/TopBar';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <TopBar />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/skills'  element={<Skills />}/>
@@ -24,7 +26,7 @@ function App() {
         <Route path='/portfolio'  element={<Portfolio />}/>
         <Route path='/contact'  element={<Contact />}/>
       </Routes>
-      
+      <Footer />
     </div>
   );
 }
