@@ -13,7 +13,7 @@ export default function Skills(){
         <div className='skills-container'>
             <div className='clip-skill' style={effects} />
             <div className='skills-subcontainer'>
-                <h1 className="title-skills" data-text= "Spotlight">My set of skills </h1>
+                <h1 className="title-skills" >My set of skills </h1>
                 <ul className='skills'>
                 {skillsList.map((skill)=>{
                     return(

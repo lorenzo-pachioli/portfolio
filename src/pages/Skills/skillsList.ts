@@ -57,3 +57,4 @@ export const skillsList:list = [
     name: 'Trello'
     }
 ]
+

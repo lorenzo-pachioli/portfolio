@@ -1,0 +1,127 @@
+.about-subconteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+    height: 65%;
+    position: relative;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.card{
+    width:80%;
+    height:80%;
+    background-color: #fff796;
+    clip-path: polygon(0 60%, 20% 60%, 20% 0, 100% 0, 100% 100%, 20% 100%, 20% 80%, 0 80%);
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+
+.card1{
+    width:80%;
+    height:80%;
+    background-color: #fff796;
+    clip-path: polygon(0 40%, 20% 40%, 20% 0, 100% 0, 100% 100%, 20% 100%, 20% 60%, 0 60%);
+    position: absolute;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: all 1s ease-in-out;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.card2{
+    width:80%;
+    height:80%;
+    background-color: #fff796;
+    clip-path: polygon(0 20%, 20% 20%, 20% 0, 100% 0, 100% 100%, 20% 100%, 20% 40%, 0 40%);
+    position: absolute;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: all 1s ease-in-out;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border:1px solid darkgray;
+}
+
+.card3{
+    width:80%;
+    height:80%;
+    background-color: #fff796;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 20% 20%,  0 20%);
+    position: absolute;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: all 1s ease-in-out;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+
+}
+
+.label{
+    position: relative;
+    width: 30%;
+    height: 20%;
+    clip-path: polygon(0 0, 80% 0,  100% 50%, 80% 100%, 0 100%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1%;
+}
+
+.info{
+    position: relative;
+    box-sizing: border-box;
+    right: 0;
+    height: 95%;
+    width: 65%;
+    
+    margin: 1%;
+    color: #031430;
+    text-align: justify;
+    word-wrap: break-word;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 100%;
+    line-height: 190%;
+    letter-spacing: 0.1rem;
+    background: repeating-linear-gradient(#fff796, #fff796 29px, grey 5px, grey 30px);
+    
+}
+
+
+.card:hover ~ .card3{
+    transform: scaleX(0); 
+}
+.card:hover ~ .card2{
+    transform: scaleX(0);
+    transition-delay: 0.2s;
+}
+.card:hover ~ .card1{
+    transform: scaleX(0);
+    transition-delay: 0.3s;
+}
+
+
+.card1:hover ~ .card3{
+    transform: scaleX(0); 
+}
+.card1:hover ~ .card2{
+    transform: scaleX(0);
+    transition-delay: 0.3s;
+}
+
+
+.card2:hover ~ .card3{
+    transform: scaleX(0); 
+}
