@@ -1,13 +1,10 @@
 import React from 'react';
-import TopBar from '../../components/TopBar';
+import PortfolioComp from '../../components/portfolio/PortafolioComp';
 
 
 export default function Home(){
 
     return(
-        <div className='home-container'>
-            <TopBar />
-            <p>Portfolio</p>
-        </div>
+        <PortfolioComp />
     )
 }

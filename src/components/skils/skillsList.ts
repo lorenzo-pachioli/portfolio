@@ -21,37 +21,37 @@ type list= obj[]
 export const skillsList:list = [
     {
     svg:html,
-    name: 'HTML'
+    name: 'HTML 70%'
     },{
     svg:css,
-    name: 'CSS'
+    name: 'CSS 90%'
     },{
     svg:javascript,
-    name: 'Javascript'
+    name: 'Javascript 90%'
     },{
     svg:typescript,
-    name: 'Typescript'
+    name: 'Typescript 50%'
     },{
     svg:react,
-    name: 'React'
+    name: 'React 80%'
     },{
     svg:redux,
-    name: 'Redux'
+    name: 'Redux 50%'
     },{
     svg:sass,
-    name: 'SASS'
+    name: 'SASS 70%'
     },{
     svg:firebase,
-    name: 'Firebase'
+    name: 'Firebase 70%'
     },{
     svg:git,
-    name: 'Git'
+    name: 'Git 40%'
     },{
     svg:github,
-    name: 'Github'
+    name: 'Github 70%'
     },{
     svg:npm,
-    name: 'NPM'
+    name: 'NPM 50%'
     },{
     svg:trello,
     name: 'Trello'

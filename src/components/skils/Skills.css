@@ -15,6 +15,16 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    
+}
+.back{
+  position:absolute;
+  top: 20vh;
+  z-index: 0;
+  width: 85vw;
+  height: 70%;
+  background-color: #f2f2f2;
+  clip-path: polygon(0 0, 100% 29%, 100% 100%, 0 100%);
 }
 
 
@@ -25,7 +35,6 @@
     background: linear-gradient(260deg, rgb(104, 103, 160) 0%, #ff6666 100%);
     z-index: 1;
     position: absolute;
-    
 }
 
 .title-skills{
@@ -71,8 +80,8 @@
 .skills li{
     position: relative;
     overflow: hidden;
-    width: 130px;
-    height: 130px;
+    width: 8vw;
+    height: 8vw;
     margin: 0 3%;
     transition: all 0.5s ease-in-out;
 }
@@ -98,6 +107,7 @@
     left: 0;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: black;
@@ -105,7 +115,7 @@
     transition: all 0.5s ease-in-out;
     background-color: lightgray;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 600;
     color: white;
     box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.6);

@@ -5,10 +5,13 @@
     align-items: center;
     flex-wrap: wrap;
     width: 65%;
-    height: 65%;
+    height: 60%;
     position: relative;
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    
 }
+
+
 
 .card{
     width:80%;
