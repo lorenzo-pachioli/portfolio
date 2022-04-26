@@ -11,7 +11,9 @@
     position: fixed;
 }
 .footer-container p{
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 20%;
     height: 100%;
     color:white;
@@ -21,6 +23,7 @@
 
 .contacto ul{
     list-style: none;
+    height: 5vh;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -30,5 +33,33 @@
 .contacto li{
     text-decoration: none;
     color:white;
-    padding-left: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.web{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto img{
+    height: 90%; 
+}
+
+.contacto img:hover{
+    fill: linear-gradient(260deg, rgb(104, 103, 160) 0%, #ff6666 100%);
+}
+
+.resume{ 
+    text-decoration: none;
+    height: 80%;
+    background: linear-gradient(260deg, rgb(104, 103, 160) 0%, #ff6666 100%);
+    border-radius: 5%;
+    padding: 0 10%;
+}
+
+.resume:hover{
+    filter:brightness(80%);
 }

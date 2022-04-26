@@ -18,7 +18,7 @@
     background-color: #e6e6e6;
     transition: all 1s ease-in-out;
     border: 5px solid white;
-    border-radius: 10%;
+    border-radius: 5%;
     z-index: 95;
 
 }
@@ -45,8 +45,7 @@
     z-index: 100;
 }
 .card-info a:hover{
-    width: 83%;
-    height: 13%;
+    filter:brightness(80%);
 }
 
 .portfolio-subcontainer{
@@ -149,5 +148,8 @@
     border-radius: 5px;
     color:white;
     z-index: 100;
-    transition: all 1s ease-in-out;
+}
+
+.buttons button:hover{
+    filter:brightness(80%);
 }

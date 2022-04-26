@@ -1,13 +1,13 @@
 import React from 'react';
-import TopBar from '../../components/TopBar';
+import CompContacts from '../../components/contact/CompContact';
+
 
 
 export default function Home(){
 
     return(
-        <div className='home-container'>
-            <TopBar />
-            <p>Contact</p>
+        <div className='contact-container'>
+            <CompContacts />
         </div>
     )
 }

@@ -49,13 +49,14 @@
     width: 100px;
     height: 30px;
     border-radius: 5px;
-    background-color: #ff3333;
+    background: linear-gradient(260deg, rgb(104, 103, 160) 0%, #ff6666 100%);
 }
 
 .main-button button:hover{
-    width: 103px;
-    height: 33px;
+    width: 102px;
+    height: 32px;
     font-size: large;
+    filter:brightness(80%);
 }
 
 .contact-btn{

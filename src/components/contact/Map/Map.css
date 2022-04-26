@@ -1,0 +1,16 @@
+.maps { 
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    position: absolute;
+ }
+
+.mapContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.tileLayer{
+    width: 100%;
+    height: 100%;
+}

@@ -5,7 +5,6 @@ import FooterHome from '../../components/home/FooterHome';
 
 import './Home.css';
 
-
 export default function Home(){
 
     return(
