@@ -10,8 +10,8 @@ import './Map.css';
 
 
 export default function Map(){   
-           
-    let url = `https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoibG9yZW56b3BhY2hpb2xpIiwiYSI6ImNsMmV3MXQ4cDAwMDIzaXNhbG05bTVqbXEifQ.bN1ZOkFwfl2LonjJb11Xog`
+    let token = 'pk.eyJ1IjoibG9yZW56b3BhY2hpb2xpIiwiYSI6ImNsMmV2cjZjbjAwMHMzY28zenZucGpsenIifQ.82GjVOTfUBEcg3LJ42gvlw';
+    let url = `https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=${token}`
             
 
     return (
