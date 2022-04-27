@@ -34,3 +34,34 @@
     margin-bottom: 10px;
     tab-size: 8px;
 }
+
+
+@media screen and (max-width: 900px) {
+    .footerHome-container{
+        
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+    .image{
+        width: 100%;
+        min-height: 20vh;
+        background-color: gray;
+        margin-bottom: 20px;
+    }
+    .textarea{
+        align-items: center;
+        min-height: 30vh;
+        width: 100%;
+    }
+    .textarea h3{
+        text-align: center;
+    }
+    
+    .textarea p{
+        text-align: center;
+        tab-size: 4px;
+    }
+}

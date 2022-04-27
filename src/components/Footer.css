@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: row;
     background-color: #031430;
-    box-sizing: content-box;
+    box-sizing: border-box;
     position: fixed;
 }
 .footer-container p{
@@ -62,4 +62,25 @@
 
 .resume:hover{
     filter:brightness(80%);
+}
+
+@media screen and (max-width: 900px) {
+    .footer-container{
+        position: relative;
+        bottom: 0;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .footer-container p{
+        padding-left: 0;
+        width: 40%;
+    }
+    .contacto ul{
+        margin-right: 0;
+        height: 4vh;
+    }
+    .resume{ 
+        height: 70%;
+        padding: 1px ;
+    }
 }

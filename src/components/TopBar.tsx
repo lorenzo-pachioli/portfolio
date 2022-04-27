@@ -1,31 +1,55 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './TopBar.css';
+import line from '../assets/line.svg';
+ import './TopBar.css';
 
 
 
-export default function TopBar(){
+export default function TopBar(){ 
+
+    const handleMobileClick = (e:any) => {
+
+        
+        let screenON = e.target.style.display
+
+        if(screenON === 'flex'){
+            return e.target.style={filter:'brightness(80%)'}
+        }
+
+    }
+    
+    
+    
 
     return(
         <div className='topBar-container'>
             <h3> PACH<span>IOLI</span></h3>
-            <ul>
-                <li>
-                <Link className='link' to='/' > Home </Link>
-                </li>
-                <li>
-                <Link className='link' to='/skills' > Skills </Link>
-                </li>
-                <li>
-                <Link className='link' to='/about' > About </Link>
-                </li>
-                <li>
-                <Link className='link' to='/portfolio' > Portfolio </Link>
-                </li>
-                <li>
-                <Link className='link' to='/contact' > Contact </Link>
-                </li>
-            </ul>
+            <div className='menu'>
+                <input type='checkbox' id='hamburgesa'/> 
+                <label htmlFor="hamburgesa" >
+                    <img className='line1' src={line} alt='' />
+                    <img className='line2' src={line} alt='' />
+                    <img className='line3' src={line} alt='' />
+                </label>
+                <ul>
+            
+                    <li>
+                    <Link className='link' onClick={handleMobileClick} to='/'  > Home </Link>
+                    </li>
+                    <li>
+                    <Link className='link' onClick={handleMobileClick} to='/skills' > Skills </Link>
+                    </li>
+                    <li>
+                    <Link className='link' onClick={handleMobileClick} to='/about' > About </Link>
+                    </li>
+                    <li>
+                    <Link className='link' onClick={handleMobileClick} to='/portfolio' > Portfolio </Link>
+                    </li>
+                    <li>
+                    <Link className='link' onClick={handleMobileClick} to='/contact' > Contact </Link>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }
