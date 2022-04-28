@@ -163,9 +163,11 @@
     }
     .skills li:active img {
       transform: translateY(100%);
+      transition-duration: 2s;
     }
      
     .skills li:active p {
       transform: translateY(0);
+      transition-duration: 2s;
     }
   }
