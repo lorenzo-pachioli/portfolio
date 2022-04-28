@@ -1,6 +1,7 @@
 import podcast from '../../assets/podcast.jpeg';
 import gify from '../../assets/gify.jpeg';
 import devsUnited from '../../assets/dev-united.jpeg';
+import portfolio from '../../assets/portfolio.png';
 
 
 export const cardList = [
@@ -44,6 +45,6 @@ export const cardList = [
         description:'Its the portfolio your are currently visiting.',
         link:'https://podcastchannel-pachioli.netlify.app',
         github: 'https://github.com/lorenzo-pachioli/podcastChannel',
-        img: podcast
+        img: portfolio
     },
 ]
