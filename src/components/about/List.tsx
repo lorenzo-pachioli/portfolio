@@ -21,7 +21,7 @@ export default function List(){
                     {
                         history.map((H)=>{
                             return(
-                                <div className={H.class}>
+                                <div className={H.class} key={history.indexOf(H)}>
                                     <p className='label' style={H.style}>{H.name}</p>
                                     <p className='info'>{H.storie}</p> 
                                 </div>

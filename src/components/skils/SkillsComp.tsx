@@ -19,7 +19,7 @@ export default function SkillsComp(){
                 {skillsList.map((skill)=>{
                     return(
                         
-                            <li>
+                            <li key={skillsList.indexOf(skill)}>
                                 <img src={skill.svg} alt='' />
                                 <p>{skill.name}</p>
                             </li>

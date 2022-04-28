@@ -15,20 +15,23 @@ export default function PortfolioComp(){
     }
     
     let cellCount = 6;
-
+    let screenW = window.innerWidth;
+    
 
     const handlePrevButton = () => {
         selectedIndex --;
         
         let angle = selectedIndex / cellCount * -360;
-        setCarousel({ transform:`translateZ(-155.88px) rotateY( ${angle}deg)`})
+        console.log(screenW)
+        setCarousel({ transform:`translateZ(${screenW > 900 ? ('-173px'):('-86.6px')}) rotateY( ${angle}deg)`})
         setNumCard(selectedIndex - (6 * (Math.trunc(selectedIndex/6)))) 
     }
 
     const handleNextButton = () => {
         selectedIndex ++;
         let angle = selectedIndex / cellCount * -360;
-        setCarousel({ transform:`translateZ(-155.88px) rotateY( ${angle}deg)`})
+        console.log(screenW)
+        setCarousel({ transform:`translateZ(${screenW > 900 ? ('-173px'):('-86.6px')}) rotateY( ${angle}deg)`})
         setNumCard(selectedIndex - (6 * (Math.trunc(selectedIndex/6)))) 
     }
 

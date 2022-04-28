@@ -1,5 +1,4 @@
-import React, {useContext}  from 'react';
-import { AppContext } from './context/AppContext3';
+import React  from 'react';
 import {  Route, Routes} from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Skills from './pages/Skills/Skils';
@@ -8,13 +7,9 @@ import Portfolio from './pages/Portfolio/Portfolio';
 import Contact from './pages/Contact/Contact';
 import TopBar from './components/TopBar';
 import Footer from './components/Footer';
-import './App.css';
+
 
 function App() {
-  
-  /* const {} = useContext(AppContext) */
-
-
 
   return (
     <div className="App">

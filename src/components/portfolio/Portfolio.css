@@ -20,7 +20,6 @@
     border: 5px solid white;
     border-radius: 5%;
     z-index: 95;
-
 }
 
 .card-info h2{
@@ -70,12 +69,16 @@
 }
   
 .carousel {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     transform: translateZ(-173px);
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
+    
 }
 
 
@@ -89,7 +92,7 @@
     width: 180px;
     height: 280px;
     margin: 10px;
-    border: 2px solid black;
+    
     line-height: 20px;
     font-size:18px;
     font-weight: bold;
@@ -152,4 +155,63 @@
 
 .buttons button:hover{
     filter:brightness(80%);
+}
+
+@media screen and (max-width: 900px) {
+   
+    
+    .portfolio-container{
+        position: relative;
+        top: 10%;
+        height: 60vh;
+        width: 100vw;
+        flex-direction:column-reverse;
+        justify-content: flex-end;
+    }
+    
+    .card-info{
+        width: 95%;
+        height: 40%;
+        margin: 2%;
+        justify-content: space-between;
+
+    }
+    .card-info p{
+        padding: 3%;
+    }
+    .card-info a{
+        width: 80%;
+        height: 15%;
+    }
+    .portfolio-subcontainer{
+        justify-content: flex-start;
+        width: 400px;
+        height: 230px;
+    }
+
+    .scene {
+        width: 50%;
+        height: 80%;
+    }
+    .carousel {
+        width: 100%;
+        height: 100%;
+        transform: translateZ(-86.6px) rotateY(0);
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        
+    }
+    .carousel__cell {
+       
+        width: 95px;
+        height: 180px;
+        margin: 5px;
+    }
+
+    .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(86.6px); }
+    .carousel__cell:nth-child(2) { transform: rotateY( 60deg) translateZ(86.6px); }
+    .carousel__cell:nth-child(3) { transform: rotateY( 120deg) translateZ(86.6px); }
+    .carousel__cell:nth-child(4) { transform: rotateY(180deg) translateZ(86.6px); }
+    .carousel__cell:nth-child(5) { transform: rotateY(240deg) translateZ(86.6px); }
+    .carousel__cell:nth-child(6) { transform: rotateY(300deg) translateZ(86.6px); }
 }

@@ -7,25 +7,24 @@ import line from '../assets/line.svg';
 
 export default function TopBar(){ 
 
+    let checkbox = document.getElementById('hamburgesa') as HTMLInputElement;
+    
     const handleMobileClick = (e:any) => {
 
-        
         let screenON = e.target.style.display
-
+        
         if(screenON === 'flex'){
-            return e.target.style={filter:'brightness(80%)'}
+            e.target.style={filter:'brightness(80%)'}
         }
-
+        
+        checkbox.checked = false;
     }
     
-    
-    
-
     return(
         <div className='topBar-container'>
             <h3> PACH<span>IOLI</span></h3>
             <div className='menu'>
-                <input type='checkbox' id='hamburgesa'/> 
+                <input type='checkbox' id='hamburgesa'   /> 
                 <label htmlFor="hamburgesa" >
                     <img className='line1' src={line} alt='' />
                     <img className='line2' src={line} alt='' />

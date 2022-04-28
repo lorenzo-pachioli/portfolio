@@ -8,7 +8,6 @@
     height: 60%;
     position: relative;
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-    
 }
 
 
@@ -23,53 +22,21 @@
     flex-direction: row;
     justify-content: flex-start;
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: all 1s ease-in-out;
 }
-
-
-.card1{
-    width:80%;
-    height:80%;
-    background-color: #fff796;
+.c1{
+    clip-path: polygon(0 60%, 20% 60%, 20% 0, 100% 0, 100% 100%, 20% 100%, 20% 80%, 0 80%);
+}
+.c2{
     clip-path: polygon(0 40%, 20% 40%, 20% 0, 100% 0, 100% 100%, 20% 100%, 20% 60%, 0 60%);
-    position: absolute;
-    transform: scaleX(1);
-    transform-origin: right;
-    transition: all 1s ease-in-out;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
-
-.card2{
-    width:80%;
-    height:80%;
-    background-color: #fff796;
+.c3{
     clip-path: polygon(0 20%, 20% 20%, 20% 0, 100% 0, 100% 100%, 20% 100%, 20% 40%, 0 40%);
-    position: absolute;
-    transform: scaleX(1);
-    transform-origin: right;
-    transition: all 1s ease-in-out;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    border:1px solid darkgray;
 }
-
-.card3{
-    width:80%;
-    height:80%;
-    background-color: #fff796;
+.c4{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 20% 20%,  0 20%);
-    position: absolute;
-    transform: scaleX(1);
-    transform-origin: right;
-    transition: all 1s ease-in-out;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-
 }
 
 .label{
@@ -80,7 +47,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 1%;
+    padding: 0 4px;
 }
 
 .info{
@@ -89,7 +56,6 @@
     right: 0;
     height: 95%;
     width: 65%;
-    
     margin: 1%;
     color: #031430;
     text-align: justify;
@@ -103,28 +69,86 @@
 }
 
 
-.card:hover ~ .card3{
+.c1:hover ~ .c4{
     transform: scaleX(0); 
 }
-.card:hover ~ .card2{
+.c1:hover ~ .c3{
     transform: scaleX(0);
     transition-delay: 0.2s;
 }
-.card:hover ~ .card1{
+.c1:hover ~ .c2{
+    transform: scaleX(0);
+    transition-delay: 0.3s;
+}
+.c2:hover ~ .c4{
+    transform: scaleX(0); 
+}
+.c2:hover ~ .c3{
     transform: scaleX(0);
     transition-delay: 0.3s;
 }
 
 
-.card1:hover ~ .card3{
+.c3:hover ~ .c4{
     transform: scaleX(0); 
-}
-.card1:hover ~ .card2{
-    transform: scaleX(0);
-    transition-delay: 0.3s;
 }
 
 
-.card2:hover ~ .card3{
-    transform: scaleX(0); 
+
+@media screen and (max-width: 900px) {
+    .about-subconteiner{
+        width: 100%;
+        height: 60%;
+        margin-top: 15%;
+    }
+    .label{
+        padding: 0 1%;
+    }
+
+    .c1:hover ~ .c4{
+        transform: scaleX(1); 
+    }
+    .c1:hover ~ .c3{
+        transform: scaleX(1);
+    }
+    .c1:hover ~ .c2{
+        transform: scaleX(1);
+    }
+    .c2:hover ~ .c4{
+        transform: scaleX(1); 
+    }
+    .c2:hover ~ .c3{
+        transform: scaleX(1);
+    }
+    .c3:hover ~ .c4{
+        transform: scaleX(1); 
+    }
+
+
+
+
+    .c1:active ~ .c4{
+        transform: scaleX(0.01); 
+    }
+    .c1:active ~ .c3{
+        transform: scaleX(0.01);
+        transition-delay: 0.2s;
+    }
+    .c1:active ~ .c2{
+        transform: scaleX(0.01);
+        transition-delay: 0.3s;
+    }
+    .c2:active ~ .c4{
+        transform: scaleX(0.01); 
+    }
+    .c2:active ~ .c3{
+        transform: scaleX(0.01);
+        transition-delay: 0.5s;
+    }
+    
+    .c3:active ~ .c4{
+        transform: scaleX(0.01); 
+    }
+
+
 }
