@@ -2,6 +2,7 @@ import podcast from '../../assets/podcast.jpeg';
 import gify from '../../assets/gify.jpeg';
 import devsUnited from '../../assets/dev-united.jpeg';
 import portfolio from '../../assets/portfolio.png';
+import redux from '../../assets/reduxPractice.png';
 
 
 export const cardList = [
@@ -38,7 +39,7 @@ export const cardList = [
         description:'This page is a task organizer app and it was created using React and Redux. ',
         link:'https://redux-practice-pachioli.netlify.app/',
         github: 'https://github.com/lorenzo-pachioli/practiceRedux',
-        img: podcast
+        img: redux
     },
     {
         name:'Portfolio',
