@@ -57,6 +57,10 @@
     height: 95%;
     width: 65%;
     margin: 1%;
+    
+}
+.info p{
+    min-height: 100%;
     color: #031430;
     text-align: justify;
     word-wrap: break-word;
@@ -65,7 +69,6 @@
     line-height: 190%;
     letter-spacing: 0.1rem;
     background: repeating-linear-gradient(#fff796, #fff796 29px, grey 5px, grey 30px);
-    
 }
 
 
@@ -100,8 +103,18 @@
         width: 100%;
         height: 60%;
         margin-top: 15%;
+        padding-top: 15%;
     }
     .label{
         padding: 0 1%;
+    }
+    .card{
+        width:90%;
+        height:90%;
+    }
+    .info{
+        height: 95%;
+        width: 65%;
+        overflow-y: scroll;
     }
 }

@@ -56,8 +56,8 @@ export default function PortfolioComp(){
                                     return(
                                         <div className="carousel__cell"  key={cardList.indexOf(card)}>
                                             <div className="carousel__img"   style={{background: `url(${card.img})  no-repeat center top/100%`}}></div>
-                                            <p>Go to</p>
-                                            <p>{card.name}</p>
+                                            <a href={card.link}>Go to {card.name}</a>
+                                            
                                         </div>
                                     )})}
                             </div>

@@ -23,7 +23,7 @@ export default function List(){
                             return(
                                 <div className={H.class} key={history.indexOf(H)}>
                                     <p className='label' style={H.style}>{H.name}</p>
-                                    <p className='info'>{H.storie}</p> 
+                                    <div className='info'><p>{H.storie}</p></div> 
                                 </div>
 
                             )

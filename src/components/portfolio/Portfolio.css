@@ -108,8 +108,12 @@
     position: absolute;
     transition: all 1s ease-in-out;
 }
-.carousel__cell p{
-    color: transparent;
+.carousel__cell a{
+    display: none;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
     transition: all 1.1s ease-in-out;
 }
 
@@ -117,8 +121,8 @@
     filter: brightness(40%)
 }
 
-.carousel__cell:hover p{
-    color:white;
+.carousel__cell:hover a{
+    display: block;
     z-index: 90;
 }
 
