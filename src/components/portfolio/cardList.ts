@@ -3,6 +3,7 @@ import gify from '../../assets/gify.jpeg';
 import devsUnited from '../../assets/dev-united.jpeg';
 import portfolio from '../../assets/portfolio.png';
 import redux from '../../assets/reduxPractice.png';
+import reservaHoteles from '../../assets/reservaHoteles.png';
 
 
 export const cardList = [
@@ -18,7 +19,7 @@ export const cardList = [
         description:'Its a booking page that works with a local list of lodgings and search options to filter the list showing the results remaining below.',
         link:'https://reserva-de-alojamientos.netlify.app/',
         github: 'https://github.com/lorenzo-pachioli/reserva-de-alojamientos',
-        img: podcast
+        img: reservaHoteles
     },
     {
         name:'Giphy',
