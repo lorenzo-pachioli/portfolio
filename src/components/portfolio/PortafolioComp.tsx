@@ -4,6 +4,7 @@ import '../skils/Skills.css';
 import './Portfolio.css';
 
 let selectedIndex = 0;
+let cardN = 0;
 
 export default function PortfolioComp(){
 
@@ -20,21 +21,33 @@ export default function PortfolioComp(){
 
     const handlePrevButton = () => {
         selectedIndex --;
-        
         let angle = selectedIndex / cellCount * -360;
-        console.log(screenW)
+        
         setCarousel({ transform:`translateZ(${screenW > 900 ? ('-173px'):('-86.6px')}) rotateY( ${angle}deg)`})
-        setNumCard(selectedIndex - (6 * (Math.trunc(selectedIndex/6)))) 
+        cardN = (selectedIndex - (6 * (Math.trunc(selectedIndex/6)))) 
+
+        setCard(cardN)
     }
 
     const handleNextButton = () => {
         selectedIndex ++;
         let angle = selectedIndex / cellCount * -360;
-        console.log(screenW)
+
         setCarousel({ transform:`translateZ(${screenW > 900 ? ('-173px'):('-86.6px')}) rotateY( ${angle}deg)`})
-        setNumCard(selectedIndex - (6 * (Math.trunc(selectedIndex/6)))) 
+        cardN = (selectedIndex - (6 * (Math.trunc(selectedIndex/6)))) 
+
+        setCard(cardN)
     }
 
+    const setCard = (n: number) => {
+        if(n < 0){
+            const num = 6 + cardN;
+            setNumCard(num);
+        }else{
+            setNumCard(n);
+        }
+    }
+    
     const card = cardList[numCard]
 
     return(
