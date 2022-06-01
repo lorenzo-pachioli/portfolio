@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom';
-import imagen from '../../assets/imagen.png';
+import imagen from '../../assets/perfil.jpg';
 import './Main.css';
 
 

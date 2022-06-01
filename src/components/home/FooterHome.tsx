@@ -7,9 +7,15 @@ export default function FooterHome(){
 
     return(
         <div className='footerHome-container'>
-            <div className='image'></div>
+            {/* <div className='image'></div> */}
+            <div className='textarea border'>
+            <h3>Hi, I'm </h3>
+            <h3>Lorenzo Pachioli</h3>
+
+            </div>
+            
             <div className='textarea'>
-                <h3>Hi, I'm Lorenzo Pachioli</h3>
+                
                 <p> &emsp;I'm starting this new path of becoming a front-end software debeloper
                     and aiming for a place that allows me to put in practice the 
                     knowledge acquired studying and leadd me to keep growing and

@@ -17,14 +17,23 @@
 .textarea{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 80%;
 }
 .textarea h3{
+    text-align: center;
     color:#031430;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
+    width: 50%;
+    height: 30%;
+    font-size: 30px;
+
+}
+
+.border{
+    border: 5px solid #b3b3ff;
+    width: 40%;
 }
 
 .textarea p{
